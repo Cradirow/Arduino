@@ -1,12 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:gravity="center"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="프래그먼트 1" />
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:text=""
+            android:layout_weight="0.00" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:gravity="center_horizontal"
+            android:text="온습도"
+            android:textSize="50dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:layout_editor_absoluteY="61dp" />
+
+        <ImageView
+            android:id="@+id/imageViewTemp"
+            android:layout_width="match_parent"
+            android:layout_height="128dp"
+            android:layout_weight="0.41"
+            app:srcCompat="@drawable/good2"
+            tools:layout_editor_absoluteX="87dp"
+            tools:layout_editor_absoluteY="117dp" />
+
+        <TextView
+            android:id="@+id/textA"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#0000FF"
+            android:gravity="center"
+            android:text="10.0"
+            android:textSize="80dp"
+            android:textColor="#FFFFFF"
+            android:layout_weight="0.19" />
+
+        <TextView
+            android:id="@+id/textB"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="20.0"
+            android:textSize="80dp"
+            android:layout_weight="0.20" />
+
+    </LinearLayout>
 
 </FrameLayout>
