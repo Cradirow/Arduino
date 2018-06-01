@@ -1,0 +1,94 @@
+{
+  "project_info": {
+    "project_number": "790288210517",
+    "firebase_url": "https://arduino-firebase-c3dbb.firebaseio.com",
+    "project_id": "arduino-firebase-c3dbb",
+    "storage_bucket": "arduino-firebase-c3dbb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:790288210517:android:ca76b94a957690d9",
+        "android_client_info": {
+          "package_name": "arduino.ahn.com.arduino"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "790288210517-n3emmnb9vqfevldnfprdg12o7kkfo91t.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "790288210517-n3emmnb9vqfevldnfprdg12o7kkfo91t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLsgogwwj7sXJA1KIbZKpZ8d-ZH-cg4QM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:790288210517:android:677e146d57e45c85",
+        "android_client_info": {
+          "package_name": "com.ahn.arduino"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "790288210517-bgrr2c4ale717cvagpu2s8rsbvgd1a35.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ahn.arduino",
+            "certificate_hash": "d9e510bf720b02881352e4b3a3b234404aae435f"
+          }
+        },
+        {
+          "client_id": "790288210517-n3emmnb9vqfevldnfprdg12o7kkfo91t.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "790288210517-n3emmnb9vqfevldnfprdg12o7kkfo91t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLsgogwwj7sXJA1KIbZKpZ8d-ZH-cg4QM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "790288210517-n3emmnb9vqfevldnfprdg12o7kkfo91t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
