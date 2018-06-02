@@ -80,7 +80,7 @@ public class Fragment1 extends Fragment {
             public void onDataChange(DataSnapshot dataSnapshot) {
                 temp = dataSnapshot.getValue(float.class);
                 textTemperature = (TextView)view.findViewById(R.id.textB);
-                textTemperature.setText(temp + " C");
+                textTemperature.setText(temp + " °C");
 
                 if(temp >= 25 && temp <= 28){
                     imageView_Good.setImageResource(R.drawable.good2);
