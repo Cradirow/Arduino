@@ -13,6 +13,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.messaging.FirebaseMessaging;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
@@ -22,6 +23,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private final int FRAGMENT4 = 4;
 
     private Button bt_tab1, bt_tab2, bt_tab3, bt_tab4;
+
+    private final String TOPIC = "Silver";
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
@@ -37,6 +40,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         bt_tab2.setOnClickListener(this);
         bt_tab3.setOnClickListener(this);
         bt_tab4.setOnClickListener(this);
+
+        FirebaseMessaging.getInstance().subscribeToTopic(TOPIC);
 
         callFragment(FRAGMENT1);
     }
