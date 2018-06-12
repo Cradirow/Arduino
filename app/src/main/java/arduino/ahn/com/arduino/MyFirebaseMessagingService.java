@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.media.Ringtone;
 import android.media.RingtoneManager;
 import android.net.Uri;
+import android.os.PowerManager;
 import android.support.v4.app.NotificationCompat;
 import android.util.Log;
 
@@ -26,6 +27,16 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
         public void onMessageReceived(RemoteMessage remoteMessage) {
 
             String notificationTitle = null, notificationBody = null;
+
+            PowerManager pm = (PowerManager) getSystemService(Context.POWER_SERVICE );
+            PowerManager.WakeLock wakeLock = pm.newWakeLock( PowerManager.FULL_WAKE_LOCK
+                    | PowerManager.ACQUIRE_CAUSES_WAKEUP, "TAG" );
+            wakeLock.acquire(3000);
+
+//            if (wakeLock != null) {
+//                wakeLock.release();
+//                wakeLock = null;
+//            }
 
             // Check if message contains a notification payload.
             if (remoteMessage.getNotification() != null) {
