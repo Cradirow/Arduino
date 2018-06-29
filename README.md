@@ -1,7 +1,9 @@
 # Intro
 Realtime forecast app with Arduino and Firebase
 
-* Source code can be used with specific arduino modules and google firebase services.
+Checking specific locations' weather by using this remote app.
+
+*Source code can be used with specific arduino modules and google firebase services.*
 
 # Available Services
 All statistics are saved in firebase realtime DB.
@@ -20,6 +22,8 @@ This app using firebase functions which automatically send caution push messages
 
 > Check codes in here : [functions](https://github.com/Cradirow/Arduino/blob/master/functions/index.js)
 
+# Contributors
+- Ahn Hyuk Joo
 
 # Used Tools
 - Arduino mini d1 r1
