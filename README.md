@@ -13,7 +13,7 @@ If this statistics are higher than normal weather, app automatically send a caut
 - Gas Status(CO2, NO2, CO)
 
 # Example
-![silverwheel](/silverwheel.png)
+![silverwheel](Arduino/silverwheel.png)
 
 # About Firebase Functions
 This app using firebase functions which automatically send caution push messages.
